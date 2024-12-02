@@ -1,6 +1,7 @@
 FROM node:22.11.0-alpine
 
 RUN apk add --no-cache bash
+RUN npm -v
 RUN npm i -g @nestjs/cli typescript ts-node
 
 COPY package*.json /tmp/app/
